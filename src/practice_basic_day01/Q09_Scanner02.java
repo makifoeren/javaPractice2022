@@ -38,7 +38,13 @@ public class Q09_Scanner02 {
         System.out.println("yas = " + yas);
         System.out.println("boy = " + boy);
         System.out.println("yasadiginiz yeri seviyor musunuz = " + seviyorMu);
+
+
+        /*
+        ***git ad
+         */
     }
+
 
 
 }
