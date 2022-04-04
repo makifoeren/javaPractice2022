@@ -10,5 +10,13 @@ public class Q08_LocalDate06 {
 
     public static void main(String[] args) {
 
+        LocalDate bugun = LocalDate.now();
+        System.out.println("bugun = " + bugun);
+
+        LocalDate degisenTarih = bugun.plusDays(1).plusMonths(1).plusYears(1);
+        System.out.println("degisenTarih = " + degisenTarih);
+
+        LocalDate sonTarih = degisenTarih.minusDays(3).minusMonths(2).minusYears(5);
+        System.out.println("sonTarih = " + sonTarih);
     }
 }
