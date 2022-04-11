@@ -14,6 +14,7 @@ public class Q08_Arrays {
 
         double toplam = 0;
 
+
         for (int i = 0; i < 3; i++) { //outer arr
             for (int j = 0; j < 3; j++) { //inner arr
                 if (arr[i][j].contains("$")) {
