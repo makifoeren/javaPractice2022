@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Q07_StringManipulation01 {
 
-    //Kullanicidan ismini ve soyisimi girmesini isteyin, sonrasinda konsola tam ismini buyuk harfler ile yazdirin
+    //Kullanicidan ismini ve soyisimi girmesini isteyin, sonrasinda konsola
+    // tam ismini buyuk harfler ile yazdirin
 
     public static void main(String[] args) {
 
@@ -14,7 +15,8 @@ public class Q07_StringManipulation01 {
                 lastname = scan.nextLine();  //multiple declarations, bu sekilde kullanim uygulanabilir
         String fullname = firstname.concat(" "+lastname).toUpperCase();
 
-        String name ="Techproeducation".concat(String.valueOf(12));   // concat(String.valueOf(12) yerine concat(12); olmaz
+        String name ="Techproeducation".concat(String.valueOf(12));
+        // concat(String.valueOf(12) yerine concat(12); olmaz
         // concat method sadece String variable ya da String value ile kullanilir
 
         System.out.println("your full name is: "+fullname);

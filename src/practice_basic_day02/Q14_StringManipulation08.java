@@ -20,7 +20,8 @@ public class Q14_StringManipulation08 {
         System.out.println("Lutfen 2. isim giriniz:"); String isim2=scan.nextLine().toLowerCase();
 
         if (isim1.length()%2==0) {
-            System.out.println(isim1.substring(0, (isim1.length()/2)).concat(isim2).concat(isim1.substring(isim1.length()/2 )));
+            System.out.println(isim1.substring(0, (isim1.length()/2)).concat(isim2).
+                    concat(isim1.substring(isim1.length()/2 )));
         } else {
             System.out.println("isim1 cift sayili olmadigi icin ortasina yerlestiremedik");
         }

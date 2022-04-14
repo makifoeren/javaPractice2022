@@ -1,6 +1,6 @@
 package practice_basic_day02;
 
-public class Q09_StringManipulation03 {
+public class  Q09_StringManipulation03 {
 
     // String seklinde verlen asagidaki fiyatlarin toplamini bulunuz
     // String  str 1= "$13.99"
