@@ -27,7 +27,7 @@ public class Q05_ExponentialNumber {
         }
         System.out.println("While ile cozum = " + sonuc);
 
-        for (int i =10; i < us; i++) {
+        for (int i =0; i < us; i++) {
             sonuc*=taban;
         }
         System.out.println("For ile cozum = " + sonuc);
