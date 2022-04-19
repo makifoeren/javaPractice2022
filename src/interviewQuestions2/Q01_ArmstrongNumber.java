@@ -8,6 +8,8 @@ public class Q01_ArmstrongNumber {
             (0, 1, 153, 370, 371, 407)
             153 = 1*1*1 + 5*5*5 + 3*3*3 = 153
             370 = 3*3*3 + 7*7*7 + 0*0*0 = 370
+ 370 = 3*3*3 + 7*7*7 + 0*0*0 = 370
+
 
           soru2: Birden baslayarak girilen sayıya kadar her bir tamsayının amstrong sayı olup olmadıgını
           gösteren program yazınız */
@@ -38,7 +40,7 @@ public class Q01_ArmstrongNumber {
 
     }
 
-    //soru 2 icin
+    //soru 2 icin****
     private static void girilenSayiyaKadarOlanArmstrong(int sayi) {
         for (int i= 1;i<=sayi;i++){
             armstrong(i); //recursive method uyguladik
