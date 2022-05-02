@@ -13,52 +13,52 @@ public class Q01_MapKeysValues {
     // ulke ve nufus  lari hem map gibi..hem de ayri ayri yazdirma ?
 
     public static void main(String[] args) {
-
-        HashMap<String, Integer> ulke = new HashMap<>();
-
+        HashMap<String,Integer> ulke = new HashMap<>();
         ulke.put("Almanya", 80);
         ulke.put("Turkiye", 83);
         ulke.put("Amerika", 250);
-        ulke.put("Fransa", 60);
-        ulke.put("Kanada", 40);
+        ulke.put("Fransa", 68);
+        ulke.put("Kanada ", 40);
 
-        System.out.println("Ulke isimleri ve nufuslari = " + ulke + " milyondur .");
+        System.out.println("ulke isimleri ve nufuslari :" + ulke + " milyondur");
 
-        System.out.println("Ulke isimleri : " + ulke.keySet());
-        //Ulke isimleri : [Turkiye, Fransa, Kanada, Almanya, Amerika]
+        System.out.println("ulke isimleri : " + ulke.keySet());
+        //ulke isimleri : [Turkiye, Fransa, Almanya, Amerika, Kanada ]
 
-        System.out.println("Ulkelerin nufuslari : " + ulke.values());
-        //Ulkelerin nufuslari : [83, 60, 40, 80, 250]
+        System.out.println("ulke nufuslari :" + ulke.values());
+        //ulke nufuslari :[83, 68, 80, 250, 40]
 
-        int sayac=0; // 50 mil fazla ulke sayiyi
-        for (Integer buyukMu: ulke.values()) { // ulkelre bakiyor
-            if (buyukMu>50){ // buyukse
-                sayac++; // artiriyor
+        int sayac = 0; //sayac-> nufusu 50 milyondan fazla olan ulke sayisi
+        for (Integer buyukMu :ulke.values()){ //ulke nufuslarina bak
+            if(buyukMu>50){ //50 milyondan buyukse
+                sayac++; //1 arttir
             }
+        }
+
+        System.out.println("nufusu 50 milyondan fazla olan ulke sayisi :" +sayac);
+
+
+        int nufus = 0;
+        for (Integer toplam:ulke.values()
+             ) {
+            nufus +=toplam;
 
         }
-        System.out.println("Nufusu 50 ml fazla olanlar : " + sayac); //Nufusu 50 ml fazla olanlar : 4
+        System.out.println("nufus toplami : " + nufus);
 
-
-        int nufus=0;
-        for (Integer toplam:ulke.values()) {
-            nufus+=toplam;
-
-        }
-        System.out.println("Nufus toplami : " + nufus); // Nufus toplami : 513
-
-        for (Map.Entry<String , Integer> siralama:ulke.entrySet()) { // entrySet=key+value
+        for (Map.Entry<String, Integer>siralama:ulke.entrySet()) { // entrySet = key + value
             System.out.println(siralama);
         }
 
-        for (String   ulkeSirasi: ulke.keySet()){
+        for (String ulkeSirasi:ulke.keySet() //sadece key
+             ) {
             System.out.println(ulkeSirasi);
-
-        }
-        for (Integer  ulkeSirasi: ulke.values()){
-            System.out.println(ulkeSirasi);
-
         }
 
+
+        for (Integer nufusSirasi:ulke.values() //nufuslari
+        ) {
+            System.out.println(nufusSirasi);
+        }
     }
 }
